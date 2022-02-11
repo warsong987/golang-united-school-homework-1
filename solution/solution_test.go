@@ -1,13 +1,14 @@
-package solution
+package solution_test
 
 import (
+	"golang-united-school-homework-1/solution"
 	"testing"
 
 	"github.com/kyokomi/emoji"
 )
 
 func TestGetMessage(t *testing.T) {
-	res := GetMessage()
+	res := solution.GetMessage()
 	wait := emoji.Sprint("Hello :world_map:")
 
 	if res != wait {
